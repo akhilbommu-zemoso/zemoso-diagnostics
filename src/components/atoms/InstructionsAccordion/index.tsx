@@ -5,17 +5,15 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { ReactComponent as StartIcon } from "../../../../public/assets/icons/info.svg";
 import React from "react";
-import { Grid, SvgIcon } from "@mui/material";
+import { SvgIcon } from "@mui/material";
 import theme, { COLORS } from "../../../theme";
 
 export interface InstructionsAccordionProps {
-  startIcon?: any;
   accordionHeader: string;
   accordionContent: string;
 }
 
 const InstructionsAccordion: React.FC<InstructionsAccordionProps> = ({
-  startIcon,
   accordionHeader,
   accordionContent,
 }) => {
@@ -29,7 +27,7 @@ const InstructionsAccordion: React.FC<InstructionsAccordionProps> = ({
       sx={{
         boxShadow: "none",
         width: "434px",
-        bgcolor: theme.palette.grey[100],
+        bgcolor: COLORS.GAMMA_GREY_100,
       }}
       disableGutters
       onChange={handleChange}
