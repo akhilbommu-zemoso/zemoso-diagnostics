@@ -11,12 +11,14 @@ export const COLORS: ColorMap = {
   GAMMA_TEXT_LOW_EMPHASIS: "#757380",
   GAMMA_ALERTS_RED_200: "#FC5C5C",
   GAMMA_ALERTS_RED_500: "#DA4D4D",
+  GAMMA_ALERTS_GREEN: "#4D8066",
   GAMMA_GREY_50: "#F8F8FA",
   GAMMA_GREY_100: "#E9E8ED",
   GAMMA_GREY_200: "#D4D2D9",
   GAMMA_GREY_300: "#9F9DA6",
   GAMMA_GREY_500: "#6D6C73",
   GAMMA_GREY_700: "#3C3B40",
+  BETA_PURPLE_800: "#9E62B2",
   LIGHT_GREY: "#F6F5F7",
   LIGHT_BLUE: "#C6CEF7",
   PRIMARY_GRADIENT: "#6B4DE0",
@@ -124,7 +126,7 @@ const theme = createTheme({
 
     caption: {
       fontSize: "14px",
-      fontWeight: 700,
+      fontWeight: 500,
       fontStyle: "normal",
       lineHeight: "20px",
     },
