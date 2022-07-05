@@ -6,17 +6,19 @@ export interface InfoCardProps {
   width?: string;
 }
 
+const boxStyles = {
+  height: "88px",
+  background: theme.palette.secondary.light,
+  borderRadius: "12px",
+  padding: "17px 12px",
+  boxSizing: "border-box",
+};
+
 const InfoCard: React.FC<InfoCardProps> = ({ data, width }) => {
   return (
     <Box
-      style={{
-        width: width,
-        height: "88px",
-        background: theme.palette.secondary.light,
-        borderRadius: "12px",
-        padding: "17px 12px",
-        boxSizing: "border-box",
-      }}
+      sx={boxStyles}
+      width={width}
     >
       <Typography
         variant="overline2"

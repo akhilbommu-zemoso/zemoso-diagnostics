@@ -1,5 +1,6 @@
 import React from "react";
 import { Button as MaterialButton } from "@mui/material";
+import { COLORS } from "../../../theme";
 
 export interface ButtonProps {
   label: string;
@@ -24,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
       {...props}
       sx={{
         textTransform: "none",
-        color: label != "Cancel" ? "" : "#FC5C5C",
+        color: label != "Cancel" ? "" : COLORS.GAMMA_ALERTS_RED_200,
         width: "222px",
         height: "42px",
       }}

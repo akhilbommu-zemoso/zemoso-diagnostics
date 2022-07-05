@@ -27,7 +27,7 @@ const InstructionsAccordion: React.FC<InstructionsAccordionProps> = ({
       sx={{
         boxShadow: "none",
         width: "434px",
-        bgcolor: theme.palette.grey[100],
+        bgcolor: COLORS.GAMMA_GREY_100,
       }}
       disableGutters
       onChange={handleChange}
