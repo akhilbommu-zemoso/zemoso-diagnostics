@@ -16,6 +16,13 @@ AddPatient.args = {
   variant: 'contained',
 };
 
+export const AddPatientDisabled = Template.bind({});
+AddPatientDisabled.args = {
+  label: 'Add Patient',
+  disabled: true,
+  variant: 'contained',
+};
+
 export const cancel = Template.bind({});
 cancel.args = {
   label: 'Cancel',
