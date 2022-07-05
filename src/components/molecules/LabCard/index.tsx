@@ -27,7 +27,7 @@ const LabCard: React.FC<LabCardProps> = ({
         }}
         border={
           labCardData.id === activeId
-            ? "3px solid #9E62B2"
+            ? `2px solid ${COLORS.BETA_PURPLE_800}`
             : `1px solid ${COLORS.GAMMA_GREY_100}`
         }
       >
